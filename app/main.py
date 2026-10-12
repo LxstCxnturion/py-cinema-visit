@@ -10,7 +10,7 @@ def cinema_visit(
     cinema_hall = CinemaHall(hall_number=hall_number)
     cleaning_staff = Cleaner(name=cleaner)
 
-    customer_objects = []
+    customer_objects: list[Customer] = []
 
     for customer_data in customers:
         customer = Customer(name=customer_data["name"], food=customer_data["food"])
