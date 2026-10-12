@@ -4,6 +4,7 @@ from app.people.cinema_staff import Cleaner
 
 class CinemaHall:
     def __init__(self, number: int) -> None:
+        self.number = number
         self.hall_number = number
 
     def movie_session(
@@ -12,7 +13,6 @@ class CinemaHall:
         customers: list[Customer],
         cleaning_staff: Cleaner,
     ) -> None:
-
         print(f'"{movie_name}" started in hall number {self.hall_number}.')
 
         for customer in customers:

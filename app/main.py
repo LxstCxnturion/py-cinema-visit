@@ -10,7 +10,7 @@ def cinema_visit(
     cleaner: str,
     movie: str,
 ) -> None:
-    cinema_hall = CinemaHall(hall_number=hall_number)
+    cinema_hall = CinemaHall(number=hall_number)
     cleaning_staff = Cleaner(name=cleaner)
 
     customer_objects: list[Customer] = []
